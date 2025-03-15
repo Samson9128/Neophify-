@@ -1,0 +1,111 @@
+import React from 'react';
+import styled from 'styled-components';
+
+// Styled Components for styling
+const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+`;
+
+const Header = styled.header`
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+`;
+
+const Title = styled.h1`
+  font-size: 3rem;
+  margin-bottom: 10px;
+`;
+
+const Subtitle = styled.p`
+  font-size: 1.5rem;
+`;
+
+const Section = styled.section`
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+`;
+
+const SectionTitle = styled.h2`
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2575fc;
+`;
+
+const Text = styled.p`
+  font-size: 1.1rem;
+  line-height: 1.6;
+`;
+
+const List = styled.ul`
+  list-style: disc;
+  margin-left: 20px;
+  font-size: 1.1rem;
+`;
+
+const Footer = styled.footer`
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+`;
+
+function App() {
+  return (
+    <Container>
+      <Header>
+        <Title>Neophify Company</Title>
+        <Subtitle>Innovating the Future</Subtitle>
+      </Header>
+      
+      <Section>
+        <SectionTitle>About Us</SectionTitle>
+        <Text>
+          Welcome to Neophify Company, where innovation meets excellence.
+          We are a forward-thinking company dedicated to providing top-notch
+          tech solutions with creativity and passion. Our team of experts is
+          committed to redefining industry standards by merging cutting-edge
+          technology with stunning design.
+        </Text>
+      </Section>
+      
+      <Section>
+        <SectionTitle>Our Mission</SectionTitle>
+        <Text>
+          Our mission is to empower businesses with innovative solutions that
+          drive progress and transform the future. At Neophify, we believe in
+          pushing boundaries and creating sustainable value for our clients,
+          partners, and stakeholders.
+        </Text>
+      </Section>
+      
+      <Section>
+        <SectionTitle>Our Services</SectionTitle>
+        <List>
+          <li>Advanced Tech Solutions</li>
+          <li>Professional Consulting</li>
+          <li>Creative Design & Development</li>
+          <li>Market Analysis & Strategy</li>
+        </List>
+      </Section>
+      
+      <Footer>
+        <p>&copy; {new Date().getFullYear()} Neophify Company. All Rights Reserved.</p>
+      </Footer>
+    </Container>
+  );
+}
+
+export default App;
